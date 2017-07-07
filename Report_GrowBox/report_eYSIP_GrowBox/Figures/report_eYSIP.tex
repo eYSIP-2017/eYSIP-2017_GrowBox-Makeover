@@ -19,7 +19,7 @@
 \fancyhf{}
 %\rhead{\includegraphics[width=1cm]{logo}}
 \lhead{\rightmark}
-\rhead{\includegraphics[width=1cm]{logo}}
+\rhead{\includegraphics[width=2.5cm]{gh-logo1}}
 \fancyfoot[RE, RO]{\thepage}
 \fancyfoot[CE, CO]{\href{http://www.e-yantra.org}{www.e-yantra.org}}
 
@@ -78,8 +78,8 @@ contents={\includegraphics{logo}}
 {\Huge\scshape Modeling, Designing and Simulation of Grow Box \\[.1in]}
 \vfill
 \begin{flushright}
-{\large Intern Abhishek Kumar Verma \\}
-{\large Mentors \hspace{35pt} Lohit Penubaku \\}
+{\large \textbf{Intern} Abhishek Kumar Verma \\}
+{\large \textbf{Mentors} \hspace{30pt} Lohit Penubaku \\}
 {\large Vishwanathan Iyer \\}
 {\large Ajit Harpude \\}
 {\large Rucmenya Bessariya \\}
@@ -88,17 +88,24 @@ contents={\includegraphics{logo}}
 
 {\itshape 2017, e-Yantra Publication}
 \end{titlepage}
+ 
+\tableofcontents
+
+\listoffigures
 %-------------------------------------------------------------------------------
 
-\chapter[Project Tag]{Modeling, Designing and Simulation of Grow Box}
+\chapter[Modeling, Designing and Simulation of Grow Box]{Modeling, Designing and Simulation of Grow Box}
 \section*{Abstract}
-Grow Box is partially or completely closed system to grow plants.So, in order to grow plant, environment needs to be provided. The existing Grow Box has all the necessary properties and has potential to be a product. It's now time to put everything in order, in terms of hardware, a good water container, flexibility and its structure. By doing this not only it will make market appealing, but also brings in an design attitude towards project development cycle. This report contains process to design the Grow Box Hardware along with flow simulation of air inside the system. It also contains the step by step process to assemble the Grow Box.
+Grow Box is partially or completely closed system to grow plants.To grow plants in closed box, environment needs to be provided. The existing Grow Box has all the necessary properties and has potential to be a product. It is now time to put everything in order, in terms of hardware, a good water container, flexibility and its structure. By doing this not only it will make market appealing, but also brings in an design attitude towards project development cycle. This report contains process to design the Grow Box outer structure along with flow simulation of air inside the system. It also contains the step by step process to assemble the Grow Box.
 
 \subsection*{Completion status}
-Two version of Grow Box has been designed. Version2 has been fabricated with all the Electronics hardware.
+Two version of Grow Box has been designed. Fabrication of version1 is not feasible due to its complex design. Version2 has been fabricated with all the Electronics hardware. \begin{figure}[h!]\begin{center}
+  \includegraphics[width=170pt]{P1080888} 
+  \caption{Current Working Model}
+\end{center}\end{figure}
 
 \section{Modeling and Designing}
-Design consideration
+While designing the Grow Box following points have been considered
 \begin{itemize}
 \item Air Circulation
 \item Temperature Control
@@ -111,20 +118,36 @@ Design consideration
 \end{itemize}
 
 \subsection{Grow Box V0}
-This is first prototype to be fabricated.\\
-\includegraphics[width=200pt]{growboxversio0}\\
-\href{https://www.youtube.com/watch?v=nuCj2OUl2X8}{Air Flow Simulation in Grow Box Version0} in Solid Works\\
+This is first prototype to be fabricated for testing purpose. This model consists of L shaped aluminum extrusion as framing structure, joined with fasteners. \\
+\begin{figure}[h!]
+  \begin{center}
+\includegraphics[width=200pt]{growboxversio0} 
+\caption{Grow Box V0}
+\end{center}
+\end{figure}
+
+\begin{figure}[h!]
 \includegraphics[width=200pt]{version_0_FV}
 \includegraphics[width=200pt]{version_0_ISO}
+\caption{Air Flow Simulation in V0}
+\end{figure}
+\href{https://www.youtube.com/watch?v=nuCj2OUl2X8}{Air Flow Simulation in Grow Box Version0} in Solid Works.\\
+This design consists of one inlet fan and one exhaust fan situated on the side wall of Grow Box. inlet fan is at lower position than exhaust fan. The flow of air is not proper as air comes from inlet and directly hit the other side of wall.
 
 \subsection{Grow Box V1}
-This is the \href{https://www.youtube.com/watch?v=sGrjrwHcsWk}{first version} and is designed in Autodesk Fusion 360.\\
-\includegraphics[width=200pt]{version_1}\\
+This is the \href{https://www.youtube.com/watch?v=sGrjrwHcsWk}{first version} and is designed in Autodesk Fusion 360. This design consists of aluminum tube and 3 way, 4 Way, 5Way connectors as framing structure. It has provision of light positioning and water storage. This model has more space for electronics hardware positioning. The  door is attached to the model with the help of magnets. There is also provision of water storage at the bottom.   \\
+\begin{figure}[h!]\begin{center}
+\includegraphics[width=200pt]{version1}
+\end{center}\caption{Grow Box V1}
+\end{figure}
 To see the 3D Model  \href{http://a360.co/2rCJyYc}{Click}\\
-\href{https://www.youtube.com/watch?v=ab_HcFKEwkE}{Air Flow Simulation in Grow Box Version1} in Solid Works\\
-\includegraphics[width=200pt]{version_1_FV}
-\includegraphics[width=200pt]{version_1_ISO}\\
-Advantages of version1 are as follows:-
+\href{https://www.youtube.com/watch?v=ab_HcFKEwkE}{Air Flow Simulation in Grow Box Version1} in Solid Works. This model consists of two inlet points, situated at the side walls and two exhaust point, situated at the top panel. To allow proper distribution of inlet air, duct is provided. This allow air to come from all directions. There is also perforated pseudo top panel to allow air to exit from  everywhere, instead of one point exit.
+\begin{figure}[h!]
+\includegraphics[width=210pt]{version_1_FV}
+\includegraphics[width=210pt]{version_1_ISO}
+\caption{Air Flow Simulation in V1}
+\end{figure}
+\\Advantages of version1 are as follows:-
 \begin{itemize}
     \item Good air flow inside the Grow Box.
     \item This design is modular. So, it can be stacked vertically or horizontally by just changing the Aluminum Tube with MS Tubes.
@@ -139,13 +162,22 @@ The disadvantage of this model are as follows-
 \end{itemize}
 
 \subsection{Grow Box V2}
-This is the \href{https://www.youtube.com/watch?v=TTjnuqw7IV8}{Second version} and is designed in Autodesk Fusion 360. This model has been fabricated.\\
-\includegraphics[width=400pt]{version2}\\
+This is the \href{https://www.youtube.com/watch?v=TTjnuqw7IV8}{Second version} and is designed in Autodesk Fusion 360. This model has been fabricated. Framing structure of this model is done using aluminum tube and 3 way connectors. The supporting structure is 6mm thick acrylic sheets. Transparent acrylic is provided from all four side to provide aesthetic look. Top and bottom portion have opaque acrylic to hide the electronic  components.\\
+\begin{figure}[h!]
+ \begin{center}
+\includegraphics[width=300pt]{version2}
+\caption{Grow Box V2}
+\end{center}
+\end{figure}
 To see the 3D Model  \href{http://a360.co/2sLIiCD}{Click}\\
-\href{https://www.youtube.com/watch?v=ab_HcFKEwkE}{Air Flow Simulation in Grow Box Version2} in Solid Works\\
+\href{https://www.youtube.com/watch?v=ab_HcFKEwkE}{Air Flow Simulation in Grow Box Version2} in Solid Works. In this only inlet fans are provided. Fans are located at horizontal plane. Curved panel is used to change the direction of air. Outlet openings are provided in side walls and top walls.
+In this the air comes from inlet point and strikes the curved panel and then flows toward the plant and LED lights. Thus, allowing air to flow over plants as well as cool the LED flood lights and then exit through outlet points. \\
+\begin{figure}[h!]
 \includegraphics[width=200pt]{version_2_FV}
 \includegraphics[width=200pt]{version_2_ISO}
-Reasons why this model has been fabricated-
+\caption{Air Flow Simulation in V2}
+\end{figure}
+\\Reasons why this model has been fabricated-
 \begin{itemize}
     \item Good air flow inside the Grow Box.
     \item Less cost compared to version1 design.
@@ -160,8 +192,7 @@ The disadvantage of this model are-
 \end{itemize}
 
 \section{Hardware parts}
-\begin{itemize}
-  \item List of hardware
+\subsection{List of hardware}
   \begin{enumerate}
   \item Square Aluminum Pipe
   \item Square Connectors
@@ -171,32 +202,60 @@ The disadvantage of this model are-
   \item Magnets
   \item Aluminum or Mild Steel Strips
   \item Axial Flow Fans
-  \item SunBoard or Foam Board
+  \item Sunboard or Foam Board
   \item Brackets
   \end{enumerate}
-  \item Detail of each hardware:\\\\
+  \subsection{Detail of each hardware:}
   Different parts of Grow Box are as follows:
    \begin{enumerate}
   \item Square Aluminum Pipe  \href{https://www.justdial.com/Mumbai/Variety-Aluminium-Ghatkopar-West/022P1932129_BZDET}{Vendor link},\\
   Aluminum Square tubing is used as supporting structure because of its light weight, relative strength, superior resistance to corrosion and easy to work with properties.\\
   When vertical stacking is needed these Aluminum tubing can be replaced by High strength steel pipes due to more relative strength.
   \begin{enumerate}
-  \item \href{http://a360.co/2sqg5SJ}{Tube 93.2}
-  \item \href{http://a360.co/2tpFQUh}{Tube 43}   
-  \item \href{http://a360.co/2tpFQUh}{Tube 65}   
+  \item \href{http://a360.co/2sqg5SJ}{Tube 93.2}\\
+  \begin{figure}[h!]\begin{center}
+  \includegraphics[width=200pt]{tube93}
+  \caption{Aluminum Tube 932 mm}
+\end{center}\end{figure}
+  \item \href{http://a360.co/2tpFQUh}{Tube 43}\\
+  \begin{figure}[h!]\begin{center}
+  \includegraphics[width=150pt]{tube43} 
+  \caption{Aluminum Tube 430 mm}
+\end{center}\end{figure} 
+\item \href{http://a360.co/2tpFQUh}{Tube 65}\\
+  \begin{figure}[h!]\begin{center}
+  \includegraphics[width=200pt]{tube65} 
+  \caption{Aluminum Tube 650mm}
+\end{center}\end{figure}
   \end{enumerate}
   \item Square Connectors\href{https://www.indiamart.com/digitalmetrology/tube-connector.html}{Vendor link},\\
   No fasteners are required to fix them, friction holds the framing together. This makes it easy to use and anyone can join these like Lego blocks.
   \begin{enumerate}
-  \item \href{http://a360.co/2sMp2oQ}{3 Way 90deg Elbow Square Connectors} 
+  \item \href{http://a360.co/2sMp2oQ}{3 Way 90deg Elbow Square Connectors}\\
+  \begin{figure}[h!]\begin{center}
+  \includegraphics[width=120pt]{3WayConnectors}
+  \caption{3 Way Connectors}
+\end{center}\end{figure}
   \end{enumerate}
   \item Clear Acrylic Sheets\\
   These provide clear view of the plants inside. These are mainly provided for aesthetic look. These also acts as supporting structures.\\
   Front mid panel is attached to the framing structure using magnets. This can be removed when needed.
   \begin{enumerate}
-  \item \href{http://a360.co/2sq8qUr}{Front Mid Panel}
-  \item \href{http://a360.co/2sGPxAG}{Rear Mid Panel}   
-  \item \href{http://a360.co/2thgj1m}{Right Side Mid Panel} 
+  \item \href{http://a360.co/2sq8qUr}{Front Mid Panel}\\ 
+  \begin{figure}[h!]\begin{center}
+  \includegraphics[width=200pt]{FrontPanel}
+  \caption{Front Panel}
+\end{center}\end{figure}
+  \item \href{http://a360.co/2sGPxAG}{Rear Mid Panel}\\
+  \begin{figure}[h!]\begin{center}
+  \includegraphics[width=200pt]{RearWall}
+  \caption{Rear Panel}
+\end{center}\end{figure}
+  \item \href{http://a360.co/2thgj1m}{Right Side Mid Panel}\\
+  \begin{figure}[h!]\begin{center}
+  \includegraphics[width=170pt]{SidePanel} 
+  \caption{Side Plane}
+\end{center}\end{figure}
   \item \href{http://a360.co/2thgj1m}{Left Side Mid Panel}
    \item \href{http://a360.co/2tJ37U7}{Side Curve Panel}
   \end{enumerate}
@@ -211,9 +270,21 @@ The disadvantage of this model are-
   \item \href{http://a360.co/2sGInMZ}{Right Side Bottom Panel}
   \item \href{http://a360.co/2sGqayR}{Left Side Top Panel}
   \item \href{http://a360.co/2sGInMZ}{Left Side Bottom Panel}
-  \item \href{http://a360.co/2tJ6avt}{Top Panel}
-  \item \href{http://a360.co/2tIuY6K}{Base Panel}
-  \item \href Component Box Panels
+  \item \href{http://a360.co/2tJ6avt}{Top Panel}\\
+  \begin{figure}[h!] \begin{center}
+  \includegraphics[width=250pt]{TopPanel}
+  \caption{Top Panel}
+\end{center}\end{figure}
+\begin{figure}[h!]\begin{center}
+  \includegraphics[width=200pt]{base}
+  \caption{Base Panel}
+\end{center}\end{figure}
+  \item \href{http://a360.co/2tIuY6K}{Base Panel}\\
+   \item Component Box Panels\\
+   \begin{figure}[h!]\begin{center}
+  \includegraphics[width=270pt]{componentbox}
+  \caption{Component Box Panel}
+\end{center}\end{figure}
   \begin{enumerate}
   \item \href{http://a360.co/2sGOZLh}{Top Panel}
   \item \href{http://a360.co/2tpwkkd}{Side Panel}
@@ -226,10 +297,10 @@ The disadvantage of this model are-
   \begin{enumerate}
   \item Screw\\
   Diameter of the screw used here is 1/8 inches.
-  \item Screw Bolts
+  \item Screw Bolts\\
+  Its size depend on fans being used.
   \item Screw Nuts
-  \item Butterfly Nut
-  \item Bolt
+  
   \end{enumerate}
   \item Magnets\href{http://www.amazon.in/Perfect-Magnets-Nickel-Coated-Pieces/dp/B01LY18VN3/ref=sr_1_7?ie=UTF8&qid=1499193943&sr=8-7&keywords=magnets}{ Vendor link},\\
   These are used to hold the front mid panel. Using these removes latches to hold the panel, thus removing any protrusions. 
@@ -240,13 +311,20 @@ The disadvantage of this model are-
    \end{enumerate}
   \item Sun Board or Foam Board\\
    Sunboard acts as sealing agent by not allowing the air inside to leak from sides
-  \item Brackets
+  \begin{figure}[h!] \begin{center}
+  \includegraphics[width=200pt]{sunBoard}\\
+  \caption{Sun Board Sealing Agent}
+  \end{center}\end{figure}
+
   \item Axial Flow Fans\href{http://www.amazon.in/60x60x25mm-Brushless-12V-Cooling-Fan/dp/B01MS9AHPC/ref=sr_1_99?ie=UTF8&qid=1499194646&sr=8-99&keywords=dc+fans+12v}{ Vendor link},\\
   An axial fan is a type of a compressor that increases the pressure of the air flowing through it. The blades of the axial flow fans force air to move parallel to the shaft about which the blades rotate.\\
-  \includegraphics[width=200pt]{Fan60x60x25}\\
+  \begin{figure}[h!]\begin{center}
+  \includegraphics[width=150pt]{Fan60x60x25}\\
+  \caption{Inlet Fans}
+  \end{center}\end{figure}
+  
   Product specification voltage: 12v current: 0. 12 - 0. 21 a dimensions: 60 x 60 x 25 mm (lxwxh) DC brushless motor fan brand can be different as shown in picture but other features and dimensions will remain same. Application: Cnc, robotics, DIY projects, computer cases, power supplies, 12v circuits where cooling is required. Package include: 1 x 60x60x25mm cooling fan.
   \end{enumerate}
-\end{itemize}
 
 
 \section{Assembly of hardware}
@@ -254,68 +332,94 @@ Steps of assembly of hardware with pictures for each step.
 \subsection*{Steps to Assembly}
 \subsection*{Step 1}
 Press fit the 3 way joint to aluminum tube and hammer with a rubber mallet.\\
-\includegraphics[width=200pt]{1}
+\begin{center}
+  \includegraphics[width=200pt]{1}
+  \end{center}
 \subsection*{Step 2}
 Similarly press fit the other 3 way joint to aluminum tube and hammer with a rubber mallet.\\
-\includegraphics[width=200pt]{2}
+\begin{center}
+  \includegraphics[width=200pt]{2}
+  \end{center}
 \subsection*{Step 3}
 Fix the base panel to the frame using screws.\\
-\includegraphics[width=200pt]{3}
+\begin{center}
+  \includegraphics[width=200pt]{3}
+  \end{center}
 \subsection*{Step 4}
 Press fit the vertical aluminum tubes to the 3 way connectors and hammer with a rubber mallet.\\
-\includegraphics[width=200pt]{4}
+\begin{center}
+  \includegraphics[width=200pt]{4}
+  \end{center}
 \subsection*{Step 5}
 Similarly press fit the top frame with 3 way joint to aluminum tube and hammer with a rubber mallet.\\
-\includegraphics[width=200pt]{5}
+\begin{center}
+  \includegraphics[width=200pt]{5}
+  \end{center}
 \subsection*{Step 6}
 Fix the bottom panels of front, rear and sides to the frame using screws.\\
-\includegraphics[width=200pt]{6}
+\begin{center}
+  \includegraphics[width=200pt]{6}
+  \end{center}
 \subsection*{Step 7}
 Attach the mid panels of rear and sides to the frame using screws.\\
-\includegraphics[width=200pt]{7}
+\begin{center}
+  \includegraphics[width=200pt]{7}
+  \end{center}
 \subsection*{Step 8}
 Similarly attach the top panels of front, rear and sides to the frame using screws.\\
-\includegraphics[width=200pt]{8}
+\begin{center}
+  \includegraphics[width=200pt]{8}
+  \end{center}
 \subsection*{Step 9}
 Attach the top panel to the frame using screws.\\
-\includegraphics[width=200pt]{9}
+\begin{center}
+  \includegraphics[width=200pt]{9}
+  \end{center}
 \subsection*{Step 10}
 Assemble the component box as shown in figure using chloroform.\\
-\includegraphics[width=200pt]{10}
+\begin{center}
+  \includegraphics[width=200pt]{10}
+  \end{center}
 \subsection*{Step 11}
 Fix the fans to the component box using screws and nuts.\\
-\includegraphics[width=200pt]{11}
+\begin{center}
+ \includegraphics[width=200pt]{11} 
+  \end{center}
 \subsection*{Step 12}
 Place the component box inside the box as shown in figure and fix them with the help of L brackets and screws.\\
-\includegraphics[width=200pt]{12}
+\begin{center}
+ \includegraphics[width=200pt]{12} 
+  \end{center}
 \subsection*{Step 13}
 Remove the bottom panels of sides and assemble the Electronic components inside the box. \\
-\includegraphics[width=200pt]{13}
+\begin{center}
+  \includegraphics[width=200pt]{13}
+  \end{center}
 \subsection*{Step 14}
 Attach the bottom panels of sides and the curve panel using screws.\\
-\includegraphics[width=200pt]{14}
+\begin{center}
+  \includegraphics[width=200pt]{14}
+  \end{center}
 \subsection*{Step 15}
 Fix the light holding Aluminum or Mild Iron Strip to the top frame using screws .\\
-\includegraphics[width=200pt]{15}
+\begin{center}
+  \includegraphics[width=200pt]{15}
+  \end{center}
 \subsection*{Step 16}
 Fix the sunboard or foam board and magnets on the front side of frame as shown in figure with the help of Fevi Quick and let it cure for some time. Put masking tape above the sunboard and magnets.\\
-\includegraphics[width=200pt]{16}
+\begin{center}
+ \includegraphics[width=150pt]{16} 
+  \end{center}
 \subsection*{Step 17}
 Fix the magnets in the grooves provided in front mid panel using Fevi Quick or Araldite and let it cure for sometime. Put masking tape on the magnets. Take care of polarity of the magnets. Now front mid panel can be attached and removed as required.\\
-\includegraphics[width=200pt]{17}
+\begin{center}
+ \includegraphics[width=200pt]{17}
+  \end{center}
 \subsection*{Step 18}
 Remove the front mid and bottom panels to pace the Turf inside the Grow Box. Attach the panels back to the frame.\\
-\includegraphics[width=200pt]{18}
-
-
-
-\section{Future Work}
-\begin{itemize}
-\item Top panel needs to be redesigned in order to allow cooling of LED Flood Light.
-\item To control temperature, Heater and chiller unit need to be added.
-\item To control humidity, Humidifier need to be added.
-\item Carbon filters need to be added at exhaust end to remove any smell from plants.
-\end{itemize}
+\begin{center}
+  \includegraphics[width=200pt]{18}
+  \end{center}
 
 \section {Design Files}
 \subsection{CAD Model Files}
@@ -330,13 +434,38 @@ Remove the front mid and bottom panels to pace the Turf inside the Grow Box. Att
     \item \href{https://drive.google.com/open?id=0B8nJz0e_p6YNTGNyNHEzUktRTFk}{Version2}
 \end{itemize}
 
-\begin{thebibliography}{li}
-\bibitem{.}
-{\em .}
 
 
-\end{thebibliography}
+\section{Future Work}
+\begin{itemize}
+\item Top panel needs to be redesigned in order to allow cooling of LED Flood Light.
+\item To control temperature, Heater and chiller unit need to be added.
+\item To control humidity, Humidifier need to be added.
+\item Carbon filters need to be added at exhaust end to remove any smell from plants.
+\end{itemize}
 
+
+
+\section{Reference}
+\begin{enumerate}
+    
+\item Open Agrigulture Website. \href{https://wiki.openag.media.mit.edu/}{Farming for Future}
+ \item Autodesk Fusion 360 Website. \href{https://www.autodesk.com/products/fusion-360/features#design}{https://www.autodesk.com/products/fusion-360/features#design}
+  \item Macmaster Carr website. \href{https://www.mcmaster.com/#aluminum-square-structural-framing-tubing/=18dj96f}{Macmaster Carr}
+  \item \href{http://www.growweedeasy.com/exhaust}{Air Circulation & Exhaust Tutorial}
+  \item\href{http://www.growell.co.uk/blog/2011/04/grow-room-ventilation}{How Air Flow Affects Your Plants}
+  \item \href{https://supercloset.com/}{SuperCloset Grow Box website}
+  \item \href{http://www.bcnorthernlights.com/learn-to-grow-your-own/what-is-a-grow-box}{BC Northern Lights website}
+  \item \href{http://www.7sensors.com/}{7 Sensors website}
+\end{enumerate}
+
+\section{Vendor Links}
+\begin{enumerate}
+    \item \href{https://www.justdial.com/Mumbai/Variety-Aluminium-Ghatkopar-West/022P1932129_BZDET}{Aluminum Hardware},
+    \item \href{https://www.indiamart.com/digitalmetrology/tube-connector.html}{Square Connectors},
+    \item \href{http://www.amazon.in/Perfect-Magnets-Nickel-Coated-Pieces/dp/B01LY18VN3/ref=sr_1_7?ie=UTF8&qid=1499193943&sr=8-7&keywords=magnets}{Magnets},
+    \item \href{http://www.amazon.in/60x60x25mm-Brushless-12V-Cooling-Fan/dp/B01MS9AHPC/ref=sr_1_99?ie=UTF8&qid=1499194646&sr=8-99&keywords=dc+fans+12v}{Axial Flow Fans},
+\end{enumerate}
 
 \end{document}
 
